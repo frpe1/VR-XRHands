@@ -43,7 +43,7 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 11
+  serializedVersion: 12
   m_GIWorkflowMode: 0
   m_GISettings:
     serializedVersion: 2
@@ -98,7 +98,8 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_LightingSettings: {fileID: 4890085278179872738, guid: ce41fdc94f646534189bc8fc0660e381,
+    type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -118,6 +119,8 @@ NavMeshSettings:
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
@@ -228,6 +231,7 @@ Light:
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!4 &705507995
@@ -576,7 +580,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d769d9eb96307b3449d6ce0ea195c82c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  handObject: {fileID: 0}
+  handObject: {fileID: 573763191051453536}
 --- !u!1 &1356426373
 GameObject:
   m_ObjectHideFlags: 0
@@ -606,7 +610,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
@@ -625,6 +629,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -649,6 +654,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &1356426376
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -718,6 +724,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -742,6 +749,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &1697399784
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -918,7 +926,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d769d9eb96307b3449d6ce0ea195c82c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  handObject: {fileID: 0}
+  handObject: {fileID: 8220382583226388955}
 --- !u!1 &1858123267
 GameObject:
   m_ObjectHideFlags: 0
@@ -1121,6 +1129,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hand_Right
       objectReference: {fileID: 0}
+    - target: {fileID: 573763192728940802, guid: 142de5c27643e9a4fa3f29573aedd1f9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 573763192728940862, guid: 142de5c27643e9a4fa3f29573aedd1f9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1181,6 +1194,12 @@ PrefabInstance:
 --- !u!4 &573763191051453535 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 573763192728940862, guid: 142de5c27643e9a4fa3f29573aedd1f9,
+    type: 3}
+  m_PrefabInstance: {fileID: 573763191051453534}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &573763191051453536 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 573763192728940802, guid: 142de5c27643e9a4fa3f29573aedd1f9,
     type: 3}
   m_PrefabInstance: {fileID: 573763191051453534}
   m_PrefabAsset: {fileID: 0}
@@ -1256,6 +1275,12 @@ PrefabInstance:
 --- !u!4 &8220382583226388954 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8220382583221551341, guid: 50b0ad0913843dc4f820aae6010fc65f,
+    type: 3}
+  m_PrefabInstance: {fileID: 8220382583226388953}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8220382583226388955 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8220382583221551337, guid: 50b0ad0913843dc4f820aae6010fc65f,
     type: 3}
   m_PrefabInstance: {fileID: 8220382583226388953}
   m_PrefabAsset: {fileID: 0}
